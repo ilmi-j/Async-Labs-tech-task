@@ -1,0 +1,26 @@
+.toolbar {
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media only screen and (min-width: $tablet-breakpoint) {
+    padding: 0 100px;
+  }
+  .menu-icon {
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 5px 0;
+    .line {
+      width: 100%;
+      height: 2px;
+      background-color: $dark;
+      border-radius: 2px;
+      &.bottom.collapsed {
+        width: 60%;
+        align-self: end;
+      }
+    }
+  }
+}

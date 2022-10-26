@@ -1,0 +1,33 @@
+.main-page {
+  margin-bottom: 50px;
+
+  .main-container {
+    padding: 20px;
+    width: 100%;
+    @media only screen and (min-width: $tablet-breakpoint) {
+      max-width: 1100px;
+    }
+    @media only screen and (min-width: 1120px) {
+      width: 90%;
+      padding: 0;
+    }
+    @media only screen and (max-width: $tablet-breakpoint) {
+      width: 100%;
+    }
+
+    .header-container {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      @media only screen and (min-width: $mobile-breakpoint) {
+        width: 500px;
+      }
+    }
+
+    .cards-container {
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
