@@ -1,5 +1,5 @@
 <template>
-  <div class="toolbar">
+  <div class="toolbar" @click="$router.push({path: '/'})">
     <async-icon />
     <div class="menu-icon">
       <div class="line top collapsed"></div>
